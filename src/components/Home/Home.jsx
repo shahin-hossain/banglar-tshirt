@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 import { useLoaderData } from 'react-router-dom';
 import TShirt from '../TShirt/TShirt';
-import Cart from '../../Cart/Cart';
 import './Home.css'
 import toast from 'react-hot-toast';
+import Cart from '../Cart/Cart';
 const Home = () => {
     const tshirts = useLoaderData()
     const [cart, setCart] = useState([])

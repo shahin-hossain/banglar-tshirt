@@ -1,0 +1,20 @@
+import React from 'react';
+import Father from '../Father/Father';
+import Uncle from '../Uncle/Uncle';
+import Aunty from '../Aunty/Aunty';
+import './Grandpa.css'
+const Grandpa = () => {
+    const ring = 'Diamond'
+    return (
+        <div className='grandpa'>
+            <h2>This is Grandpa page</h2>
+            <section className='flex'>
+                <Father ring={ring}></Father>
+                <Uncle></Uncle>
+                <Aunty ring={ring}></Aunty> {/*ring props পাঠানো হচ্ছে Grandpa থেকে*/}
+            </section>
+        </div>
+    );
+};
+
+export default Grandpa;
