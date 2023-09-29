@@ -15,7 +15,8 @@ Currently, two official plugins are available:
 - added & deleted
 - toast
 - conditional rendering
-
+- pops drill
+- context api
 ### Netlify তে বিভিন্ন Rout এ  গিয়ে Reload দিলে page not found 404 আসে এটা কিভাবে সমাধান করা যায়।
 
 - public folder এর মধ্যে (_redirects)  একটা file করে তার মধ্যে (/* /index.html 200 set করতে হবে।)
