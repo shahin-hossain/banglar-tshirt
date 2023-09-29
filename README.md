@@ -15,3 +15,14 @@ Currently, two official plugins are available:
 - added & deleted
 - toast
 - conditional rendering
+
+### Netlify তে বিভিন্ন Rout এ  গিয়ে Reload দিলে page not found 404 আসে এটা কিভাবে সমাধান করা যায়।
+
+- public folder এর মধ্যে (_redirects)  একটা file করে তার মধ্যে (/* /index.html 200 set করতে হবে।)
+
+```js
+public/_redirects > /* /index.html 200
+```
+### surge এর এই একই সমস্যা হয়। সমাধান হলো।
+
+- npm run build করার পরে dist folder এর মধ্যে index.html কে copy করে 200.html করতে হবে।
